@@ -1,7 +1,7 @@
 let n1, n2
-n1 = 10
-n2 = 3
-n3 = 90
+n1 = -584
+n2 = 2012
+n3 = 6541
 
 if (n1 > n2 && n1 > n3) {
     console.log("O maior número é", n1)
