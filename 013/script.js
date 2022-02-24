@@ -5,7 +5,7 @@ let peso_ideal
 console.log("Qual seu gênero?")
 genero = "homem"
 
-if (genero = "homem") {
+if (genero == "homem") {
     console.log("Digite sua altura :")
     altura = 1.90
 
