@@ -1,13 +1,6 @@
-let n1
-let n2
-let result
-
+function somar(n1=0,n2=0) {
 console.log("Digite um número")
-n1 = 18
-
 console.log("Digite outro número")
-n2 = 89
-
-result = n1 + n2
-
-console.log("A soma dos dois números é : ", result)
+console.log("A soma dos dois números é : ", n1 + n2)
+}
+somar(24,19)

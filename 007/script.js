@@ -1,14 +1,8 @@
-let area
-let b
-let h
-let reportsta
-
-console.log("Para descobrir a área do quadrado nos informe o valor da sua base: ")
-b = 5
-
-console.log("Agora precisamos do valor da sua altura: ")
-h = 6
-
-area = b * h
-resposta = area * 2
-console.log("O dobro da área desse quadrado é ", resposta, "cm²")
+function areaDobro(b=0, h=0) {
+    let area
+    console.log("Para descobrir a área do quadrado nos informe o valor da sua base: ")
+    console.log("Agora precisamos do valor da sua altura: ")
+    area = b * h
+    console.log("O dobro da área desse quadrado é ", area*2, "cm²")
+}
+areaDobro(5,9)

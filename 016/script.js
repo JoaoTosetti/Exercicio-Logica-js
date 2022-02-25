@@ -1,10 +1,11 @@
-let num
+function sinal(num=0) {
+    console.log("Digite um valor:")
 
-console.log("Digite um valor:")
-num = -98
-
-if (num > 0) {
-    console.log("Esse número é positivo!")
-} else {
-    console.log("Esse número é negativo!")
+    if (num > 0) {
+        console.log("Esse número é positivo!")
+    } else {
+        console.log("Esse número é negativo!")
+    }
 }
+
+sinal(-65)

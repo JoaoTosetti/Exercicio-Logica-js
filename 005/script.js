@@ -1,9 +1,6 @@
-let metros
-let cm
+function centimetros(metro=0) {
+    console.log("Digite um valor em metros para saber em centímetros:")
+    console.log("O número em centímetros é ", metro*100, "cm")
+}
 
-console.log("Digite um valor em metros para saber em centímetros.")
-metros = 63
-
-cm = metros * 100
-
-console.log("O número em centímetros é ", cm, "cm")
+centimetros(87)

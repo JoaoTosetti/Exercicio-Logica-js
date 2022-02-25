@@ -1,9 +1,6 @@
-let raio
-let area
+function area(raio=0) {
+    console.log("Informe o raio do círculo:")
+    console.log("A área desse círculo é", (raio * raio) * 3.14, "cm²")
+}
 
-console.log("Informe o raio do círculo")
-raio = 24
-
-area = (raio * raio) * 3.14
-
-console.log("A área desse círculo é ", area, "cm²")
+area(65)
