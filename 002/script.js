@@ -1,6 +1,3 @@
 function exibir(n1=0) {
-    console.log("Informe um número:")
-    console.log("O número informado foi", n1)
+    document.querySelector("#resultado").innerHTML ="O número informado foi " + n1
 }
-
-exibir(24)
