@@ -1,25 +1,26 @@
-function salario(horas=0, ganho=0, valor_ir=11, valor_inss=8, valor_sindicato=5) {
+function salario() {
     let salario_bruto
-    let ir 
+    let salario_liquido
     let inss
     let sindicato
-    let salario_liquido
+    let imposto_renda
 
-    console.log("Digite quantas horas você trabalha por mês:")
-    console.log("Agora informe quanto você recebe por hora:")
-    salario_bruto = horas * ganho
+    salario_bruto = document.querySelector("#salario_bruto").value
+    salario_bruto = parseFloat(salario_bruto)
 
-    ir = salario_bruto * (valor_ir / 100)
-    inss = salario_bruto * (valor_inss / 100)
-    sindicato = salario_bruto * (valor_sindicato / 100)
+    inss = salario_bruto * 8/100
+    sindicato = salario_bruto * 5/100
+    imposto_renda = salario_bruto * 11/100
+    salario_liquido = salario_bruto - inss - sindicato - imposto_renda
 
-    salario_liquido = (salario_bruto - inss - sindicato - ir)
+    document.querySelector("#resultado").innerHTML = "Salário Bruto: R$ " + salario_bruto
+    document.querySelector("#resultado").innerHTML += "<br>"
+    document.querySelector("#resultado").innerHTML += "INSS (8%): R$ " + inss
+    document.querySelector("#resultado").innerHTML += "<br>"
+    document.querySelector("#resultado").innerHTML += "Sindicato (5%): R$ " + sindicato
+    document.querySelector("#resultado").innerHTML += "<br>"
+    document.querySelector("#resultado").innerHTML += "Imposto de Renda (11%): R$ " + imposto_renda
+    document.querySelector("#resultado").innerHTML += "<br>"
+    document.querySelector("#resultado").innerHTML += "Salário Líquido: R$ " + salario_liquido
 
-    console.log("+ Salário Bruto : R$", salario_bruto)
-    console.log("- IR (11%) : R$", ir)
-    console.log("- INSS (8%) : R$", inss)
-    console.log("- Sindicato (5%) : R$", sindicato)
-    console.log("= Salário Líquido", salario_liquido)
 }
-
-salario(150,36)
